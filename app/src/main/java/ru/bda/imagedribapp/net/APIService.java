@@ -11,10 +11,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import ru.bda.imagedribapp.constants.APIData;
 import ru.bda.imagedribapp.net.interfaces.API;
 
-/**
- * Created by User on 09.02.2017.
- */
-
 public class APIService {
 
     public static API getDribbbleShotService(final String authToken) {
