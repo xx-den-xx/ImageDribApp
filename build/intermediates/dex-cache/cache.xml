@@ -48,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_73185302ab6e16f4dc96f5f9ed67954ab1f34ba5.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
         jumboMode="false"
         optimize="true"
@@ -66,12 +75,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.3_bae50dbbe49229b9a385b0ac6b4a382b1c775b6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
         <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_b1b9065c9ad8e6afcaef6364e316b9bf9457a489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_00e6ed614873e1acce98aa893f004d74651f9f4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_a04b8f55f867242f59a6f765238c4cbf4195ebd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-core\2.2.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test.espresso-espresso-core-2.2.2_14377abd3976defff2d39794934e33e2e4e774f2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,12 +138,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support.test\runner\0.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-runner-0.5_0ef38c0d5fd9f27d3fb89eed0fbc92b2c55a2d82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_6c16f77b0d7e305e5e115813524a3fc04c9e0f99.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
         <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_1e5781bda5062392500daf33822f90750dac7966.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support.test\rules\0.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-rules-0.5_bc483d8c31d01ec48a54a361ad86fc6a4530f216.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,12 +183,57 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support.test\exposed-instrumentation-api-publish\0.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test-exposed-instrumentation-api-publish-0.5_d34b620829e944fbf906bc3a7f7f695e689d1558.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_80e27613c80c29e7a5e92b1d17eaa61e55d810cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_da47f4fe6fd0ff761eb82532e5e11c601a8158c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-idling-resource\2.2.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\com.android.support.test.espresso-espresso-idling-resource-2.2.2_155551ca360795ca3c60739317bbe0db223023b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_e7d52a1fa3d62fd3795a5ceab5dee21cce7ba14f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="C:\Users\User\Documents\GitHub\ImageDribApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.3_10da7a124e3b149baac68cc1624263893165fef2.jar" />
     </item>
     <item
         is-multidex="false"

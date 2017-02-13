@@ -3,10 +3,6 @@ package ru.bda.imagedribapp.view.adapter;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.Spanned;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,24 +12,17 @@ import android.widget.TextView;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 import ru.bda.imagedribapp.R;
 import ru.bda.imagedribapp.db.DBController;
 import ru.bda.imagedribapp.entity.Shot;
 
-/**
- * Created by User on 10.02.2017.
- */
-
 public class ShotRecyclerAdapter extends RecyclerView.Adapter<ShotRecyclerAdapter.ViewHolder> {
 
     private Context mContext;
     private List<Shot> mShotList;
     private DBController mDBController;
-    private List<String> mTitleList = new ArrayList<>();
 
     public ShotRecyclerAdapter(Context context, List<Shot> shots) {
         this.mContext = context;
@@ -51,7 +40,6 @@ public class ShotRecyclerAdapter extends RecyclerView.Adapter<ShotRecyclerAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         final Shot shot = mShotList.get(position);
         holder.mTitleView.setText(shot.getTitle());
-        Log.d("adapter_log", "shot = " + shot.getDescription());
         holder.mDescriptionView.setText(shot.getDescription());
         holder.mDescriptionView.setMaxLines(2);
 

@@ -1,27 +1,16 @@
 package ru.bda.imagedribapp.view.activity;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Environment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
-
-import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -36,12 +25,10 @@ import ru.bda.imagedribapp.entity.Shot;
 import ru.bda.imagedribapp.net.APIService;
 import ru.bda.imagedribapp.view.adapter.ShotRecyclerAdapter;
 
-
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
 
     private final  static int SIZE_LIST = 50;
 
-    private ProgressBar mProgressBar;
     private SwipeRefreshLayout mRefreshLayout;
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLayoutManager;
@@ -61,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         } else {
             new GetDBTask().execute();
         }
-
     }
 
     private boolean isConnect() {
@@ -74,12 +60,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void initContent() {
-        mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
-
         mRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.refresh_layout);
         mRefreshLayout.setOnRefreshListener(this);
         mRefreshLayout.setColorSchemeResources(R.color.blue, R.color.green, R.color.yellow, R.color.red);
-
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mShotAdapter = new ShotRecyclerAdapter(this, mShotList);
         mLayoutManager = new LinearLayoutManager(this);
@@ -97,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                             mShotList = customizedList(response.body(), SIZE_LIST);
                             mShotAdapter.setShotList(mShotList);
                             mShotAdapter.notifyDataSetChanged();
-                            mProgressBar.setVisibility(View.GONE);
                             mRefreshLayout.setRefreshing(false);
                         }
                         mRefreshLayout.setRefreshing(false);
@@ -105,7 +87,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                     @Override
                     public void onFailure(Call<List<Shot>> call, Throwable t) {
-                        mProgressBar.setVisibility(View.GONE);
                         mRefreshLayout.setRefreshing(false);
                     }
                 });
@@ -133,7 +114,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 shot.setDescription(textFormat(shot.getDescription()));
                 if (!shot.getDescription().equals("null")){
                     postShotList.add(shot);
-                    Log.d("format", shot.getDescription());
                 }
                 if (postShotList.size() == size) {
                     return postShotList;
@@ -180,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         @Override
         protected void onPreExecute() {
             mRefreshLayout.setRefreshing(true);
-            //mProgressBar.setVisibility(View.VISIBLE);
         }
 
         @Override
@@ -198,9 +177,13 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         }
     }
 
-
-
     private class GetDBTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            mRefreshLayout.setRefreshing(true);
+        }
 
         @Override
         protected Void doInBackground(Void... voids) {
@@ -216,11 +199,10 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             if (mShotList != null && mShotList.size() > 0) {
                 mShotAdapter.setShotList(mShotList);
                 mShotAdapter.notifyDataSetChanged();
-
             } else {
                 Toast.makeText(MainActivity.this, "Don't have in database data", Toast.LENGTH_SHORT).show();
             }
-            mProgressBar.setVisibility(View.GONE);
+            mRefreshLayout.setRefreshing(false);
         }
     }
 }
