@@ -41,7 +41,6 @@ public class ShotRecyclerAdapter extends RecyclerView.Adapter<ShotRecyclerAdapte
         final Shot shot = mShotList.get(position);
         holder.mTitleView.setText(shot.getTitle());
         holder.mDescriptionView.setText(shot.getDescription());
-        holder.mDescriptionView.setMaxLines(2);
 
         Picasso.with(mContext)
                 .load(shot.getImagePath())

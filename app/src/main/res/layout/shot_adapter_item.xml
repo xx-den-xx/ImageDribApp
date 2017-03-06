@@ -7,22 +7,22 @@
     <android.support.v7.widget.CardView
         android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/shot_image_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:src="@android:drawable/ic_menu_gallery"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorDescriptionBackground"
                 android:orientation="vertical"
                 android:layout_alignParentBottom="true">
@@ -39,11 +39,9 @@
                     android:id="@+id/description_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="bottom"
-                    android:layout_gravity="bottom"
+                    android:maxLines="2"
                     android:textSize="14sp"
-                    android:textColor="@color/white"
-                    android:text="Description"/>
+                    android:textColor="@color/white" />
 
             </LinearLayout>
         </RelativeLayout>
